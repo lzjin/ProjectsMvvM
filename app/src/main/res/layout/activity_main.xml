@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_with_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/ma_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemBackground="@null"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@drawable/main_navigation_textcolor_selector"
+        app:menu="@menu/main_bottom_navigation_menu" />
+
+    <FrameLayout
+        android:id="@+id/ma_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ma_navigation"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/ma_navigation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        tools:background="@color/colorAccent"
+        android:background="@drawable/round_circle_white"
+        android:elevation="8dp" />
+
+    <ImageView
+        android:id="@+id/ma_iv_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:elevation="8dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_mian_mine_check" />
+
+</RelativeLayout>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/ic_mian_home_check"
+        android:title="首页" />
+    <item
+        android:id="@+id/navigation_two"
+        android:icon="@mipmap/ic_mian_two"
+        android:title="圈游" />
+
+    <item
+        android:id="@+id/navigation_cet"
+        android:icon="@mipmap/ic_mian_mine"
+        android:title="核心" />
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@mipmap/ic_mian_shop"
+        android:title="商城" />
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@mipmap/ic_mian_mine"
+        android:title="我的" />
+</menu>
